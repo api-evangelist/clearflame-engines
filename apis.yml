@@ -1,7 +1,15 @@
 aid: clearflame-engines
 name: ClearFlame Engines
-description: 'ClearFlame Engines is a company surfaced via the API Evangelist harvest backlog (source:
-  secondary-market) and added to the network as a stub for full-pipeline profiling.'
+description: 'ClearFlame Engine Technologies was a Woodridge, Illinois clean-combustion engine startup
+  founded in 2016 by BJ Johnson and Julie Blumreiter, developing a retrofit technology that let
+  conventional heavy-duty diesel engines run on ethanol and other low-carbon liquid fuels for the
+  hard-to-electrify segments of transportation — long-haul trucking, agriculture, construction and
+  other non-road diesel applications. It raised roughly $50M across Series A and B rounds from
+  venture and industrial investors including John Deere, and appeared on secondary markets such as
+  Forge Global. The company is a hardware and powertrain engineering business with no developer
+  program, no public API and no machine-readable specifications; by 2025 it had lost investor
+  support, its co-founder CEO had departed, it was listed as not in good standing in Illinois, and
+  it moved toward bankruptcy and asset liquidation. Its website no longer serves content.'
 url: https://raw.githubusercontent.com/api-evangelist/clearflame-engines/refs/heads/main/apis.yml
 x-type: company
 x-source: harvest:secondary-market
@@ -12,6 +20,13 @@ created: '2026-08-09'
 modified: '2026-08-09'
 tags:
 - Company
+- Engines
+- Clean Energy
+- Transportation
+- Heavy Duty Trucking
+- Decarbonization
+- Ethanol
+- Manufacturing
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,3 +36,25 @@ maintainers:
 common:
 - type: Website
   url: https://forgeglobal.com/clearflame-engines_stock/
+x-enrichment:
+  date: '2026-08-09'
+  status: nochange
+  artifacts_added: 0
+  pass: local-v1
+x-coverage:
+  state: none
+  reason: defunct
+  detail: ClearFlame moved toward bankruptcy and asset liquidation in 2025 after losing investor
+    support, and clearflameengines.com now answers every path with a Cloudflare 522 (origin
+    unreachable) — the last Wayback capture of a working site is 2025-07-09, and there was never a
+    developer program on it to begin with.
+  evidence:
+  - url: https://www.clearflameengines.com/
+    status: 522
+  - url: https://www.clearflameengines.com/.well-known/agent-card.json
+    status: 0
+  - url: https://api.clearflameengines.com/
+    status: 0
+  - url: https://pypi.org/simple/clearflame/
+    status: 404
+  checked: '2026-08-09'
